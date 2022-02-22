@@ -2,9 +2,9 @@ import discord
 from discord import Embed
 from discord.ext import commands
 from discord.utils import get
-from time import asctime, localtime, time
+# from time import asctime, localtime, time
 
-token = "lmaonoyouthinkyouresoclever"
+token = "dontyouthinkyouresocleverhuh"
 server_id = 945500259868631100
 server_name = "2022-ENEL220"
 prefix = '!*'
