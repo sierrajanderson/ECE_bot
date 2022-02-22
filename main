@@ -4,7 +4,7 @@ from discord.ext import commands
 from discord.utils import get
 from time import asctime, localtime, time
 
-token = "OTA5MzQ5MjgyNDA5MjM0NDc0.YZC_gw.DDzV9_tOMVGKko3ePHhI_5RwNiE"
+token = "lmaonoyouthinkyouresoclever"
 server_id = 945500259868631100
 server_name = "2022-ENEL220"
 prefix = '!*'
