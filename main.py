@@ -2,7 +2,6 @@ import discord
 from discord import Embed
 from discord.ext import commands
 from discord.utils import get
-# from time import asctime, localtime, time
 
 token = "dontyouthinkyouresocleverhuh"
 server_id = 945500259868631100
@@ -40,6 +39,7 @@ logging_channel_id = 931728159840272434
 # globals
 COLOUR = discord.Color.from_rgb(65, 102, 145)
 MAX_ITEMS_IN_EMBED = int(len(brands) / 2)
+
 
 class RoleSelect(discord.ui.Select):
     # subclass of 'select', allowing for role manipulation
@@ -124,6 +124,7 @@ class RoleSelect(discord.ui.Select):
                                                     colour=COLOUR),
                                                 ephemeral=True)
 
+                
 class ContinentSelect(discord.ui.Select):
     def __init__(self, bot, brand_roles, server, server_id, welcome_role, placeholder,
                  logging_channel):
@@ -206,6 +207,7 @@ def role_select(bot, user_roles, verifiable_user_roles, mod_channel, server_name
                                )
 
     return discord.ui.View(role_select, timeout=None), embed
+
 
 def continent_select(bot, continent_roles, server_name, server_id, logging_channel):
     embed_description_string = "Choose a degree!"
